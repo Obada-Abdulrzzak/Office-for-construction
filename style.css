@@ -1,0 +1,275 @@
+@media screen and(max-width:1024px) {
+    
+}
+
+:root{
+    --blue--color: #277bc0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+body{
+    width: 100%;
+}
+/* start home */
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 80px;
+    background-color: #c02727;
+    box-shadow: 0 5px 15px rgb(27, 112, 209);
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    position: sticky;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    color: rgb(0, 0, 0);
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: var(--blue--color);
+
+}
+#navbar li a:hover::after{
+    content: "";
+    width: 50%;
+    height: 2px;
+    background: var(--blue--color);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+/* home page style */
+    #main{
+        background: url(img/A.png);
+        height: 90vh;
+        background-size: cover;
+        background-position: top 25% right 0;
+        padding: 0 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo{
+        height: 80px;
+        width: 80px;
+    }
+
+    p.test{
+        font-size: 30px;
+        text-shadow: 2px 2px 5px rgb(14, 153, 14);
+    
+        
+    }
+   
+    .table{
+        text-align: center;
+        margin: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    transform: translate(-50%);
+    }
+    .de{
+        background-color: #277bc0;
+    }
+
+
+/* PAGE2 style */
+
+        #about h2{
+            margin-top: 40px;
+            text-align: center;
+            color: var(--black--color);
+        }
+        #about .text{
+            border: 1px solid #e3e6f3;
+            height: 250px;
+            margin: 40px  14px;
+            border-radius: 20px;
+            background-color: #e3e6f3;
+        }
+        #about .elc{
+            margin-top: 400px;
+            border-radius: 20px;
+            margin: 15px;
+            float: left;
+        }
+        #about p{
+            text-align: end;
+            direction: rtl;
+            margin: 40px;
+            font-size: medium;
+        }
+        #contact h2{
+            text-align: center;
+            color: var(--blck--color);
+        }
+        #contact form{
+            margin: 40px;
+            float: left;
+        }
+        #contact form .input{
+            margin-top: 20px;
+        }
+        #contact .imgicon{
+            float: right;
+            margin-top: 25px;
+            margin-right: 80px;
+        
+        }
+        .submit{
+            background-color: var(--black--color);
+            border-radius: 10px;
+            outline: var(--black--color);
+            border: none;
+            padding: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 7px;
+        }
+        /* end PAGE2 style */
+
+    /* Start PAGE3 style*/
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #737d85;
+        text-align: center;
+        margin: 20px;
+    }
+
+    table {
+        width: 70%;
+        margin: 50px auto;
+        border-collapse: collapse;
+    }
+
+    .th{
+        background-color: #277bc0;
+    }
+
+    th, td {
+        padding: 15px; /* زيادة المسافة لتحسين التباعد */
+        border: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    img.FlatImage {
+        width: 180px; /* زيادة حجم الصورة */
+        height: 180px;
+        object-fit: cover;
+    }
+    .FlatImage {
+        transition: transform 0.3s;
+    }
+    
+    .FlatImage:hover {
+        transform: scale(2.2);
+    }
+
+        /* تخصيص النافذة */
+        .details-window {
+            display: none;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+    #continueButton{
+        position: absolute;
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: auto;
+    }
+
+        /* end page3 style*/
+
+    /* Start PAGE4 style*/
+
+        .custom-body {
+            font-family: Arial, sans-serif;
+            background-color: #737d85;
+            text-align: center;
+            margin: 20px;
+        }
+        
+        .custom-form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #0d9fc4;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .custom-label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        
+        .custom-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        .custom-button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        
+        .custom-message {
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .custom-captcha-button{
+            background-color: #ff0000;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        /*end page4 style*/
